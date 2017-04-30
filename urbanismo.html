@@ -87,5 +87,11 @@
 	<script src="/js/jquery-1.10.2.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/ekko-lightbox.min.js"></script>
+	<script>
+		$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+		    event.preventDefault();
+		    $(this).ekkoLightbox();
+		});
+	</script>
 </body>
 </html>
