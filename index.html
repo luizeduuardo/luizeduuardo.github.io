@@ -1,137 +1,507 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home - Tavarua Engenharia</title>
-	<link rel="stylesheet" href="/css/site.css">
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/css/prettyPhoto.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Tavarua Engenharia</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/tooplate-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
 <body>
-	<div class="navbar navbar-fixed-top header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-					<div class="logo"><a href="#"><img class="img-responsive" src="/images/logo.png" alt="Tavarua Engenharia" /></a></div>
-				</div>
-				<div class="col-sm-8 main-menu">
-					<ul class="nav navbar-nav pull-right">
-						<li id="home" class="active"><a href="/index.html">Home</a></li>
-						<li id="about"><a href="/sobre.html">Sobre</a></li>
-						<li id="service"><a href="/servicos.html">Serviços</a></li>
-						<li id="portfolio"><a href="/portfolio.html">Portifólio</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand scroll-top">
+                        <div>
+                            <h2 class="logotext">Tavarua Engenharia</h2>
+                        </div>
+                    </a>
+                </div>
+                <!--/.navbar-header-->
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" class="scroll-top">Home</a></li>
+                        <li><a href="#" class="scroll-link" data-id="about">Sobre</a></li>
+                        <li><a href="#" class="scroll-link" data-id="portfolio">Portifólio</a></li>
+                        <li><a href="#" class="scroll-link" data-id="blog">Serviços</a></li>
+                        <li><a href="#" class="scroll-link" data-id="contact">Fale Conosco</a></li>
+                    </ul>
+                </div>
+                <!--/.navbar-collapse-->
+            </nav>
+            <!--/.navbar-->
+        </div>
+        <!--/.container-->
+    </div>
+    <!--/.header-->
 
-	<div class="container body-content">
-		<div class="row">
-			<div class="col-sm-12">
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">            
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-						<li data-target="#myCarousel" data-slide-to="3"></li>
-						<li data-target="#myCarousel" data-slide-to="4"></li>
-						<li data-target="#myCarousel" data-slide-to="5"></li>
-						<li data-target="#myCarousel" data-slide-to="6"></li>
-						<li data-target="#myCarousel" data-slide-to="7"></li>
-					</ol>
 
-					<div class="carousel-inner text-center" role="listbox">
-						<div class="item active">
-							<img src="/images/home/carousel/1.png" alt="">
-						</div>
+    <section class="cd-hero">
+        <ul class="cd-hero-slider">  
+        <!-- 
+            <ul class="cd-hero-slider autoplay"> for slider auto play 
+            <ul class="cd-hero-slider"> for disabled auto play
+        -->
+            <li class="selected first-slide">
+                <div class="cd-full-width">
+                    <div class="tm-slide-content-div slide-caption">
+                        <span>Venha conhecer a</span>
+                        <h2>Tavarua Engenharia</h2>
+                        <p>Phasellus interdum tortor sem. Quisque sit amet condimentum sem. Phasellus luctus, felis sit amet pulvinar luctus.</p>
+                        <div class="primary-button">
+                            <a href="#" class="scroll-link" data-id="about">Conheça Mais</a>
+                        </div>                           
+                    </div>                   
+                </div> <!-- .cd-full-width -->
+            </li>
+        </ul> <!-- .cd-hero-slider -->
 
-						<div class="item">
-							<img src="/images/home/carousel/2.png" alt="">
-						</div>
+        <div class="cd-slider-nav">
+            <nav>
+                <span class="cd-marker item-1"></span>
+                
+                <ul>
+                    <li class="selected"><a href="#0"></a></li>
+                    <li><a href="#0"></a></li>
+                    <li><a href="#0"></a></li>                        
+                </ul>
+            </nav> 
+        </div> <!-- .cd-slider-nav -->
+    </section> <!-- .cd-hero -->
 
-						<div class="item">
-							<img src="/images/home/carousel/3.png" alt="">
-						</div>
+    <div id="about" class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h4>O que fazemos</h4>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item first-service">
+                        <div class="icon"></div>
+                        <h4>Documentação detalhada</h4>
+                        <p>Todas as etapas e cálculos da obra, estão apresentadas em memórias de cálculos, em todo seu concebmento.</p>
+                    </div>
+                </div>
+                 <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item second-service">
+                        <div class="icon"></div>
+                        <h4>Trabalhamos com Ideias</h4>
+                        <p>É um imenso prazer atender as ideias e necessidades de nossos clientes, pois não se trata apenas de negócio, mas sim de realização de um sonho de uma família.</p>
+                    </div>
+                </div>
+                 <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item third-service">
+                        <div class="icon"></div>
+                        <h4>Rápido e Confiável</h4>
+                        <p>Para a seu empreendimento ser bem sucedido é importante que tudo esteja viabilizado no projeto, evitando retrabalho, desperdício de tempo, materiais e dinheiro.</p>
+                    </div>
+                </div>
+                 <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item fourth-service">
+                        <div class="icon"></div>
+                        <h4>Visão</h4>
+                        <p>Viabilizar negócios na construção civil com foco na inovação, qualidade e satisfação do cliente, buscando sempre a melhoria contínua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-						<div class="item">
-							<img src="/images/home/carousel/4.png" alt="">
-						</div>
+    <div id="what-we-do">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="left-text">
+                        <h4>A Nossa Filosofia</h4>
+                        <h5><b>Missão</b></h5>
+                        <p>A Tavarua procura assegurar a confiança e parceria sólida com cada Cliente, garantindo o rigor e eficácia na concretização de cada Projeto. Confiança na qualidade e sustentabilidade de cada projeto. Parceria em encontrar soluções eficientes para todos os projetos e ao longo de cada etapa dos mesmos.</p>
+                        <h5><b>Visão</b></h5>
+                        <p>A TAVARUA pretende ser uma referência na inovação das suas propostas e projetos indo de encontro da evolução do Estado Social e sua relação com o meio nas suas diversas variantes, tais como Educação, Cultura, Saúde, Mobilidade…. Procura a excelência absoluta no serviço prestado para que cada projeto seja um veículo de aproximação e interação da sociedade beneficiando direta ou indiretamente cada usuário.</p>
+                        <h5><b>Valor</b></h5>
+                        <p>A TAVARUA está especialmente comprometida com a Disciplina e Rigor da sua equipe no desenvolvimento da sua atividade. Idoneidade, Responsabilidade , Integridade e Crescimento Sustentável norteiam a Inplenitus na consolidação das relações com cliente, parceiros, e colaboradores.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="right-image">
+                        <img src="img/what-we-do-right-image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-						<div class="item">
-							<img src="/images/home/carousel/5.png" alt="">
-						</div>
 
-						<div class="item">
-							<img src="/images/home/carousel/6.jpg" alt="">
-						</div>
+    <div id="portfolio" class="page-section">
+        <div class="content-wrapper">
+            <div class="inner-container container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <h4>Nosso Portifólio</h4>
+                            <div class="line-dec"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-holder-3">
+                    <div class="filter-categories">
+                        <ul class="project-filter">
+                            <li class="filter" data-filter="all"><span>Tudo</span></li>
+                            <li class="filter" data-filter="arquitetura"><span>Arquitetura</span></li>
+                            <li class="filter" data-filter="infraestrutura"><span>Infraestrutura</span></li>
+                            <li class="filter" data-filter="urbanismo"><span>Urbanismo</span></li>
+                        </ul>
+                    </div>
+                    <div class="projects-holder">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 project-item mix arquitetura">
+                              <div class="thumb">
+                                  <div class="image">
+                                    <img src="img/portifolio/arquitetura_1.jpg">
+                                  </div>
+                                  <div class="hover-effect">
+                                    <a href="img/portifolio/arquitetura_1.jpg" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 project-item mix arquitetura">
+                                <div class="thumb">
+                                    <div class="image">
+                                      <img src="img/portifolio/arquitetura_2.jpg">
+                                    </div>
+                                    <div class="hover-effect">
+                                      <a href="img/portifolio/arquitetura_2.jpg" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                              </div>
+                            <div class="col-md-3 col-sm-6 project-item mix arquitetura">
+                                <div class="thumb">
+                                    <div class="image">
+                                        <img src="img/portifolio/arquitetura_3.jpg">
+                                    </div>
+                                    <div class="hover-effect">
+                                        <a href="img/portifolio/arquitetura_3.jpg" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 project-item mix infraestrutura">
+                                <div class="thumb">
+                                    <div class="image">
+                                        <img src="img/portifolio/infra_1.png">
+                                    </div>
+                                    <div class="hover-effect">
+                                        <a href="img/portifolio/infra_1.png" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 project-item mix infraestrutura">
+                                <div class="thumb">
+                                    <div class="image">
+                                        <img src="img/portifolio/infra_2.png">
+                                    </div>
+                                    <div class="hover-effect">
+                                        <a href="img/portifolio/infra_2.png" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 project-item mix infraestrutura">
+                                <div class="thumb">
+                                    <div class="image">
+                                        <img src="img/portifolio/infra_3.png">
+                                    </div>
+                                    <div class="hover-effect">
+                                        <a href="img/portifolio/infra_3.png" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 project-item mix urbanismo">
+                                <div class="thumb">
+                                    <div class="image">
+                                        <img src="img/portifolio/urbanismo_1.jpg">
+                                    </div>
+                                    <div class="hover-effect">
+                                        <a href="img/portifolio/urbanismo_1.jpg" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 project-item mix urbanismo">
+                              <div class="thumb">
+                                  <div class="image">
+                                    <img src="img/portifolio/urbanismo_2.jpg">
+                                  </div>
+                                  <div class="hover-effect">
+                                    <a href="img/portifolio/urbanismo_2.png" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 project-item mix urbanismo">
+                                <div class="thumb">
+                                    <div class="image">
+                                        <img src="img/portifolio/urbanismo_3.jpg">
+                                    </div>
+                                    <div class="hover-effect">
+                                        <a href="img/portifolio/urbanismo_3.png" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
 
-						<div class="item">
-							<img src="/images/home/carousel/7.jpg" alt="">
-						</div>
 
-						<div class="item">
-							<img src="/images/home/carousel/8.jpg" alt="">
-						</div>
-					</div>
+    <div id="blog" class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h4>Serviços</h4>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="blog-item b1">
+                        <div class="thumb">
+                            <img src="img/blog_01.jpg" alt="">
+                            <div class="text-content">
+                                <h4>Estudos e Projetos</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-6">
+                    <div class="blog-item second-blog b2">
+                        <div class="thumb">
+                            <img src="img/blog_02.gif" alt="">
+                            <div class="text-content">
+                                <h4>Gerenciamento</h4>
+                                <span>Posted: <em>Kerley</em>  /  Date: <em>24 Jul 2017</em>  /  Category: <em>Artwork</em></span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-md-6">
+                    <div class="blog-item b3">
+                        <div class="thumb">
+                            <img src="img/blog_03.jpg" alt="">
+                            <div class="text-content">
+                                <h4>Consultoria</h4>
+                                <!-- <span>Posted: <em>Johnny</em>  /  Date: <em>16 Jul 2017</em>  /  Category: <em>Branding</em></span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pop">
+                      <span>✖</span>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis neque lacinia, porta nulla in, pellentesque ante. Vivamus in luctus mauris, non pharetra nibh. Morbi porttitor nisl sit amet velit pellentesque consequat. Etiam blandit libero turpis, id vehicula leo posuere a. In vel massa sollicitudin, tincidunt massa et, tincidunt ex.<br><br>Duis volutpat condimentum mollis. Sed eleifend libero ut viverra mattis. Suspendisse consectetur diam dolor, ut efficitur sem finibus vel. Vivamus tristique lacus sed dapibus varius. Fusce pharetra, quam quis congue pretium, ante dui imperdiet ipsum, eget lobortis leo leo sed diam.</p>
+                    </div>
+                    <div class="pop2">
+                      <span>✖</span>
+                      <p>Praesent purus leo, aliquet et efficitur id, pulvinar scelerisque enim. Maecenas a arcu sagittis, ornare ante ut, suscipit lectus. Donec dolor ipsum, laoreet nec metus non, tempus elementum massa. Donec non elit rhoncus, vestibulum enim sed, rutrum arcu. Vestibulum et purus ac diam condimentum volutpat sed ac est. Phasellus interdum tortor sem. Quisque sit amet condimentum sem. Phasellus luctus, felis sit amet pulvinar luctus, lectus dui mattis tellus, et placerat nunc ante at lacus.<br><br>Vivamus vestibulum, nisi sed placerat accumsan, felis felis venenatis tortor, vel condimentum arcu neque vel mauris. Donec a magna gravida, egestas libero non, molestie massa. Integer ut dolor eget magna congue gravida ut at arcu. Vivamus maximus neque quis luctus tempus. Vestibulum consequat a justo id feugiat. </p>
+                    </div>
+                    <div class="pop3">
+                      <span>✖</span>
+                      <p>Nullam rhoncus, orci et iaculis sodales, quam lectus suscipit augue, ut auctor massa dolor id metus. Nulla porta ut diam sodales dignissim. Ut sit amet augue vel justo laoreet dignissim. Maecenas vitae sollicitudin eros. In commodo placerat cursus. Quisque malesuada, nisl ac lacinia commodo, justo eros maximus ex, quis cursus odio erat at neque. Sed tincidunt eu dolor eget posuere.<br><br>Curabitur sit amet elit sit amet ligula eleifend aliquam quis eget quam. Mauris id mi nec justo venenatis tincidunt at ac massa. Sed et volutpat nunc. Quisque at urna quam. Duis sit amet neque eget quam iaculis iaculis. Quisque maximus porta elementum. Nam ac mattis erat, quis accumsan odio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-						<span class="sr-only">Anterior</span>
-					</a>
-					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						<span class="sr-only">Próxima</span>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="row destaque">
-			<div class="col-lg-4">
-				<img class="img-circle" src="/images/heading_1.jpg" alt="Heading 1" width="140" height="140">
-				<h2>Estudos e Projetos</h2>
-				<p><a class="btn btn-default" href="/Service/Project" role="button">Conheça »</a></p>
-			</div>
-			<div class="col-lg-4">
-				<img class="img-circle" src="/images/heading_2.jpg" alt="Heading 2" width="140" height="140">
-				<h2>Gerenciamento</h2>
-				<p><a class="btn btn-default" href="/Service/Management" role="button">Conheça »</a></p>
-			</div>
-			<div class="col-lg-4">
-				<img class="img-circle" src="/images/heading_3.jpg" alt="Heading 3" width="140" height="140">
-				<h2>Consultoria</h2>
-				<p><a class="btn btn-default" href="/Service/Consulting" role="button">Conheça »</a></p>
-			</div>
-		</div>
-	</div>
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-10 col-lg-offset-1 text-center">
-					<h4>
-						<strong>Tavarua Engenharia</strong>
-					</h4>
-					<p>
-						Rua dos Fundadores
-						<br>Praia do Sonho, Itanhaém
-					</p>
-					<ul class="list-unstyled">
-						<li><i class="fa fa-phone fa-fw"></i> (11) 98200-7661</li>
-						<li>
-							<i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:claudioni.engenharia@gmail.com">claudioni.engenharia@gmail.com</a>
-						</li>
-					</ul>
-					<br />
-					<p>Copyright © Tavarua Engenharia 2017</p>
-				</div>
-			</div>
-		</div>            
-	</footer>
+    <!-- <div id="fun-facts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="fact-item">
+                        <div class="counter" data-count="926">0</div>
+                        <span>Regular Visitors</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="fact-item">
+                        <div class="counter" data-count="214">0</div>
+                        <span>Finished Projects</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="fact-item">
+                        <div class="counter" data-count="118">0</div>
+                        <span>Happy Clients</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="fact-item">
+                        <div class="counter" data-count="16">0</div>
+                        <span>Total Awards</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
 
-	<script src="/js/jquery-1.10.2.min.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/jquery.prettyPhoto.js"></script>
+
+    <div id="contact" class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h4>Fale Conosco</h4>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.321629741039!2d-46.810576384490865!3d-24.195512691201802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d1d5419d046cb5%3A0xb7a8548f65cf27c4!2sR.+dos+Fundadores%2C+Itanha%C3%A9m+-+SP%2C+11740-000!5e0!3m2!1spt-BR!2sbr!4v1507444699743" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                      <form id="contact" action="" method="post">
+                        <div class="col-md-6">
+                          <fieldset>
+                            <input name="name" type="text" class="form-control" id="name" placeholder="Seu nome..." required="">
+                          </fieldset>
+                        </div>
+                        <div class="col-md-6">
+                          <fieldset>
+                            <input name="email" type="email" class="form-control" id="email" placeholder="Seu e-mail..." required="">
+                          </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                          <fieldset>
+                            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Sua mensagem..." required=""></textarea>
+                          </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                          <fieldset>
+                            <button type="submit" id="form-submit" class="btn">Enviar Mensagem</button>
+                          </fieldset>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2017 Tavarua Engenharia</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <p>
+                            <b>Celular:</b> (11) 98200-7661<br>
+                            <b>E-mail:</b> claudioni.engenharia@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="social-icons">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 50;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
 </body>
 </html>
